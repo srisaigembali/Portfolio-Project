@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200&display=swap');
+    </style>
+    <script
+      src="https://kit.fontawesome.com/8c0549fd06.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <h1 class="logo">
+            <a href="#"><span>S</span>risai.</a>
+          </h1>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-sun" id="icon"></i>
+            <i class="fas fa-times" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Full Stack Developer</p>
+          <h1>
+            Hi, I'm <span>Srisai</span> <br />
+            Gembali From India
+          </h1>
+        </div>
+        <div class="element">
+          <div class="bar">
+            <div class="ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -----------about------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              A highly motivated and hardworking individual looking for a
+              responsible and challenging position in a reputed organization
+              where I can use my skills and abilities to the best of my
+              potential, learn new skills, expand my knowledge and contribute to
+              the organization's growth.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links t1 active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links t2" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links t3" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Technical</span><br />Java<br />Spring Boot<br />ReactJs<br />MongoDB
+                </li>
+                <li>
+                  <span>Interpersonal</span><br />Problem Solving<br />Active
+                  Listening<br />Team Player
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Aug 2022 - present</span><br />Full Stack Engineer at
+                  Cognizant Technology Solutions
+                </li>
+                <li>
+                  <span>Feb 2022 - Jul 2022</span><br />Internship at Cognizant
+                  Technology Solutions
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2018 - 2022</span><br />BTech from VSSUT, Burla<br />cgpa:
+                  8.50
+                </li>
+                <li>
+                  <span>2016 - 2018</span><br />Intermediate from Sri Gayatri
+                  Junior College<br />percentage: 99%
+                </li>
+                <li>
+                  <span>2015 - 2016</span><br />Matriculation from Deepti
+                  Convent School<br />percentage: 90%
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------work------------ -->
+    <div id="work">
+      <div class="container">
+        <h1 class="sub-title">Work Experience</h1>
+        <div class="work-list">
+          <div>
+            <i class="fa-solid fa-laptop"></i>
+            <h2>Jr Software Engineer</h2>
+            <p>Full stack engineer at Cognizant Technology Solutions</p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-user"></i>
+            <h2>Intern for Full Stack Developer</h2>
+            <p>
+              Internship of full stack development at Cognizant Technology
+              Solutions
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Internship of web development</h2>
+            <p>
+              Learnt web development technologies html, css, javascript and
+              bootstrap at Internshala
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------------projects------------ -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>ECommerce Website</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora quam aperiam.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Portfolio Website</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempora quam aperiam.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Weather Application</h3>
+              <p>Know the waether based on city name. Built using ReactJs.</p>
+              <a href="https://srisaigembali.github.io/weather-app/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Spotify Clone</h3>
+              <p>Clone of Spotify music app using HTML, CSS & JavaScript.</p>
+              <a href="https://srisaigembali.github.io/spotifyclone/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Snake Game</h3>
+              <p>Fun snake game app using HTML, CSS & JavaScript.</p>
+              <a href="https://srisaigembali.github.io/snakegame/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Tic Tac Toe</h3>
+              <p>
+                Fun brain teasing game of tic tac toe using HTML, CSS &
+                JavaScript.
+              </p>
+              <a href="https://srisaigembali.github.io/tictactoe/"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+    <!-- -------------------contact------------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>srisaigembali2000@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i>+91 9861662325</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/srisai-gembali-9a4b81205/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/srisaigembali"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://leetcode.com/srisaigembali/"
+                ><i class="fa-solid fa-code"></i
+              ></a>
+              <!-- <a href="https://auth.geeksforgeeks.org/user/srisaigembali2000/practice"><i class="fa-brands fa-google"></i></a> -->
+            </div>
+            <a href="images/Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Made By Srisai Gembali <i class="fa-solid fa-face-smile"></i></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
