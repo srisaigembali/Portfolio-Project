@@ -365,6 +365,7 @@ nav ul li a:hover::after {
 }
 
 .btn {
+  cursor: pointer;
   display: block;
   margin: 50px auto;
   width: fit-content;
@@ -379,6 +380,10 @@ nav ul li a:hover::after {
 .btn:hover {
   background: #ff004f;
   color: #fff;
+}
+
+.list2 {
+  display: none;
 }
 
 /* ---------------contact--------------- */
