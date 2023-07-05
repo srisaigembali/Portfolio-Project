@@ -56,8 +56,8 @@ icon.onclick = function () {
 let projectbtn = document.getElementById('projectbtn');
 projectbtn.onclick = () => {
   let list2 = document.getElementById('list2');
-  list2.classList.toggle('list2');
-  if (list2.classList.contains('list2')) {
+  list2.classList.toggle('list');
+  if (list2.classList.contains('list')) {
     projectbtn.textContent = 'See More';
   } else {
     projectbtn.textContent = 'See Less';
