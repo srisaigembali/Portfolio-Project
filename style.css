@@ -183,6 +183,7 @@ nav ul li a:hover::after {
 .about-col-1 img {
   width: 100%;
   border-radius: 15px;
+  margin-top: 20px;
 }
 
 .about-col-2 {
