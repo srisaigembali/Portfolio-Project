@@ -295,6 +295,27 @@ nav ul li a:hover::after {
   padding: 50px 0;
 }
 
+.section-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.section-list li {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 500;
+  padding: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.section-list .active {
+  background-color: #ff004f;
+  color: var(--secondary-color);
+}
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -382,14 +403,6 @@ nav ul li a:hover::after {
 .btn:hover {
   background: #ff004f;
   color: #fff;
-}
-
-.list {
-  display: none;
-}
-
-#list2 {
-  margin-top: 25px;
 }
 
 /* ---------------contact--------------- */
@@ -583,4 +596,8 @@ nav .fas {
 nav ul {
   flex: 1;
   text-align: right;
+}
+
+.hide {
+  display: none;
 }
